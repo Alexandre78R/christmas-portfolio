@@ -1,3 +1,4 @@
+/* Styles généraux */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -11,12 +12,22 @@ body {
     margin: 0 auto;
 }
 
+.english-flag {
+    width: 40px; /* Réduit la largeur du drapeau */
+    height: auto;
+    float: left; /* Place le drapeau à gauche */
+    margin-top: 10px;
+    margin-right: 10px; /* Ajoute une marge à droite pour l'espacement */
+}
+
 header {
     background-color: #00539f;
     color: white;
     text-align: center;
     padding: 2em 0;
+    position: relative; /* Ajoute une position relative pour permettre le positionnement absolu du drapeau */
 }
+
 
 .avatar {
     width: 50px;
@@ -47,15 +58,23 @@ h2 {
     overflow: hidden;
     border: 1px solid #ddd;
     border-radius: 8px;
+    text-align: center; /* Centre le contenu horizontalement */
 }
 
 .project img {
     max-width: 100%;
     height: auto;
+    transform: rotate(-90deg); /* Rotation de 90 degrés à gauche */
+    margin: 20px auto; /* Centre l'image horizontalement, ajoute un espace au-dessus de l'image */
+    max-height: 300px; /* Définit une hauteur maximale pour l'image */
 }
 
 .project-info {
     padding: 20px;
+}
+
+.contact p {
+    margin-bottom: 0;
 }
 
 footer {
@@ -63,7 +82,42 @@ footer {
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+}
+
+/* Media Queries pour la réactivité */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 1em 0;
+    }
+
+    .avatar {
+        width: 40px;
+        height: 40px;
+        margin-right: 8px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    .projects .project {
+        margin-bottom: 15px;
+    }
+
+    .project-info {
+        padding: 15px;
+    }
+
+    footer {
+        padding: 8px 0;
+    }
+
+    .project-image {
+        transform: rotate(-90deg); /* Réinitialise la rotation pour les écrans plus petits */
+    }
+
 }

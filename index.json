@@ -1,0 +1,42 @@
+{
+    "pageTitle": {
+      "en": "Asle - English Portfolio",
+      "fr": "Asle - Portfolio en français"
+    },
+    "headerText": {
+        "en": "Asle - English Portfolio",
+        "fr": "Asle - Portfolio en français"
+    },
+    "aboutMeHeader": {
+      "en": "About Me",
+      "fr": "Présentation"
+    },
+    "aboutMeText": {
+      "en": "Hi, I'm Asle, a web developer in training. I'm passionate about learning and exploring the world of web development. Join me on this exciting journey as I enhance my skills and create amazing digital experiences.",
+      "fr": "Salut, je m'appelle Asle, une développeuse web en formation. Je suis passionné par l'apprentissage et l'exploration du monde du développement web. Rejoignez-moi dans ce parcours passionnant alors que j'améliore mes compétences et crée des expériences numériques incroyables."
+    },
+    "project1": {
+      "en": "Project 1: Campus Art",
+      "fr": "Projet 1 : Art du campus"
+    },
+    "project1Header": {
+        "en": "Project 1: Campus Art",
+        "fr": "Projet 1 : Art du campus"
+      },
+    "project1Description": {
+      "en": "The Campus Drawing project involves creating a user-friendly and visually appealing drawing for a university campus. The goal is to provide students and visitors with easy access to information about campus facilities, events, and academic programs. The project aims to enhance the overall digital presence of the university.",
+      "fr": "Le projet de dessin du campus consiste à créer un dessin convivial et visuellement attrayant pour un campus universitaire. L'objectif est de fournir aux étudiants et aux visiteurs un accès facile aux informations sur les installations du campus, les événements et les programmes académiques. Le projet vise à améliorer la présence numérique globale de l'université."
+    },
+    "contactHeader": {
+        "en": "Contact Me",
+        "fr": "Contact Moi"
+      },
+    "contactText": {
+      "en": "Feel free to reach out to me for collaboration or just to chat about web development. You can contact me via email at [your@email.com] or find me on social media.",
+      "fr": "N'hésitez pas à me contacter pour collaborer ou simplement discuter du développement web. Vous pouvez me joindre par e-mail à [votre@email.com] ou me trouver sur les réseaux sociaux."
+    },
+    "footerText": {
+      "en": "© 2024 English Theme Portfolio | Created by Alexandre | Powered by ChatGPT",
+      "fr": "© 2024 Portfolio de thème anglais | Créé par Alexandre | Développer par ChatGPT"
+    }
+  }

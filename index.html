@@ -4,58 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>English Theme Portfolio</title>
+    <script src="index.js" defer></script>
+    <title id="pageTitle">English Theme Portfolio</title>
 </head>
 <body>
 
     <header>
         <div class="container">
-            <img src="asle.png" alt="Asle's Avatar" class="avatar">
-            <h1>English Theme Portfolio</h1>
+            <div class="avatar-and-flag">
+                <img src="asle.png" alt="Asle's Avatar" class="avatar">
+                <img src="english.jpg" onclick="changeLanguage()" alt="English Flag" class="english-flag" id="englishFlag">
+                <img src="france.png" onclick="changeLanguage()" alt="French Flag" class="english-flag" id="frenchFlag" style="display: none;">
+            </div>
+            <h1 class="translateable" lang="en" id="headerText">English Theme Portfolio</h1>
         </div>
     </header>
 
     <section class="about-me">
         <div class="container">
-            <h2>About Me</h2>
-            <p>Hi, I'm Asle, a web developer in training. I'm passionate about learning and exploring the world of web development. Join me on this exciting journey as I enhance my skills and create amazing digital experiences.</p>
+            <h2 class="translateable" lang="en" id="aboutMeHeader">About Me</h2>
+            <p class="translateable" lang="en" id="aboutMeText">Hi, I'm Asle, a web developer in training. I'm passionate about learning and exploring the world of web development. Join me on this exciting journey as I enhance my skills and create amazing digital experiences.</p>
         </div>
     </section>
 
     <section class="projects">
         <div class="container">
-            <h2>Projects</h2>
+            <h2 class="translateable" lang="en" id="project1">Projects</h2>
             <div class="project">
-                <img src="project1.jpg" alt="Project 1">
+                <img src="campus.jpg" alt="Campus Project" class="project-image">
                 <div class="project-info">
-                    <h3>Project 1</h3>
-                    <p>Description of the first project.</p>
+                    <h3 class="translateable" lang="en" id="project1Header">Project 1: Campus Art</h3>
+                    <p class="translateable" lang="en" id="project1Description">The Campus Drawing project involves creating a user-friendly and visually appealing drawing for a university campus. The goal is to provide students and visitors with easy access to information about campus facilities, events, and academic programs. The project aims to enhance the overall digital presence of the university.</p>
                 </div>
             </div>
 
-            <div class="project">
-                <img src="project2.jpg" alt="Project 2">
-                <div class="project-info">
-                    <h3>Project 2</h3>
-                    <p>Description of the second project.</p>
-                </div>
-            </div>
-            <!-- Add more projects as needed -->
+            <!-- Ajoutez plus de projets au besoin -->
         </div>
     </section>
 
     <section class="contact">
         <div class="container">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out to me for collaboration or just to chat about web development. You can contact me via email at [your@email.com] or find me on social media.</p>
+            <h2 class="translateable" lang="en" id="contactHeader">Contact Me</h2>
+            <p class="translateable" lang="en" id="contactText">Feel free to reach out to me for collaboration or just to chat about web development. You can contact me via email at [your@email.com] or find me on social media.</p>
         </div>
     </section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 English Theme Portfolio | Created by Alexandre</p>
+            <p class="translateable" lang="en" id="footerText">&copy; 2024 English Theme Portfolio | Created by Alexandre | Powered by ChatGPT</p>
         </div>
     </footer>
 
+    <script src="./index.js"></script>
 </body>
 </html>
