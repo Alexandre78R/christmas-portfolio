@@ -9,12 +9,10 @@
 </head>
 <body>
 
-    <header>
-        <div class="container" id="about">
+    <header id="about">
+        <div class="container">
             <div class="avatar-and-flag">
                 <img src="asle.png" alt="Asle's Avatar" class="avatar">
-                <img src="english.jpg" onclick="changeLanguage()" alt="English Flag" class="english-flag" id="englishFlag">
-                <img src="france.png" onclick="changeLanguage()" alt="French Flag" class="english-flag" id="frenchFlag" style="display: none;">
             </div>
             <h1 class="translateable" lang="en" id="headerText">English Theme Portfolio</h1>
         </div>
@@ -51,6 +49,8 @@
 
     <div class="menu">
         <ul>
+            <img src="english.jpg" onclick="changeLanguage()" alt="English Flag" class="english-flag" id="englishFlagMenu">
+            <img src="france.png" onclick="changeLanguage()" alt="French Flag" class="english-flag" id="frenchFlagMenu" style="display: none;">
             <li><a class="translateable scroll-link" href="#about" id="navbar1">About Us</a></li>
             <li><a class="translateable scroll-link" href="#projects" id="navbar2">Projects</a></li>
             <li><a class="translateable scroll-link" href="#contact"id="navbar3">Contact</a></li>

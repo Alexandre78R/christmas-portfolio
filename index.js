@@ -39,9 +39,13 @@ function changeLanguage() {
     if (currentLanguage === 'en') {
         englishFlag.style.display = 'inline-block';
         frenchFlag.style.display = 'none';
+        englishFlagMenu.style.display = 'inline-block';
+        frenchFlagMenu.style.display = 'none';
     } else {
         englishFlag.style.display = 'none';
         frenchFlag.style.display = 'inline-block';
+        englishFlagMenu.style.display = 'none';
+        frenchFlagMenu.style.display = 'inline-block';
     }
 }
 
