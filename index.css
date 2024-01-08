@@ -34,6 +34,16 @@ header {
     border-radius: 50%;
     margin-right: 10px;
     border: 4px solid #fff;
+    transition: transform 0.5s ease-in-out;
+}
+
+.avatar:hover {
+    transform: rotateY(180deg); /* Rotation de 180 degrés autour de l'axe Y lors du survol */
+    transition: transform 0.5s ease-in-out; /* Ajoutez une transition pour une animation fluide */
+}
+
+.avatar:not(:hover) {
+    transform: rotateY(0);
 }
 
 h1 {
