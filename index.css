@@ -129,6 +129,18 @@ footer {
     font-weight: bold;
 }
 
+.menu-burger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+}
+
 /* Media Queries pour la réactivité */
 @media screen and (max-width: 768px) {
     header {
@@ -163,5 +175,31 @@ footer {
 
     .project-image {
         transform: rotate(-90deg);
+    }
+
+    .menu {
+        display: none;
+        top: 44px;
+    }
+
+    .menu-active {
+        display : flex;
+    }
+
+    .menu-burger {
+        display: block;
+        position: fixed;
+        top: 8px;
+        right: 0px;
+        z-index: 999;
+        background-color: #00539f;
+        padding: 2%;
+    }
+
+    .menu-burger:hover {
+        opacity: 0.8;
+    }
+    .test {
+        background-color: red;
     }
 }

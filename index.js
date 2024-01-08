@@ -37,13 +37,9 @@ function changeLanguage() {
     currentLanguage = (currentLanguage === 'en') ? 'fr' : 'en';
 
     if (currentLanguage === 'en') {
-        englishFlag.style.display = 'inline-block';
-        frenchFlag.style.display = 'none';
         englishFlagMenu.style.display = 'inline-block';
         frenchFlagMenu.style.display = 'none';
     } else {
-        englishFlag.style.display = 'none';
-        frenchFlag.style.display = 'inline-block';
         englishFlagMenu.style.display = 'none';
         frenchFlagMenu.style.display = 'inline-block';
     }
@@ -68,3 +64,19 @@ document.addEventListener('click', function (e) {
         }
     }
 });
+
+var isMenuBurger = false; 
+
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    isMenuBurger = !isMenuBurger;
+    if (isMenuBurger) 
+        menu.style.display = 'flex';
+    else 
+        menu.style.display = "none";
+}
+// // Ajoutez cette partie pour rendre le menu burger visible sur les petits écrans
+// var menuBurger = document.querySelector('.menu-burger');
+// if (menuBurger) {
+//     menuBurger.style.display = 'block';
+// }
