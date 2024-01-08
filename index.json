@@ -7,6 +7,18 @@
         "en": "Asle - English Portfolio",
         "fr": "Asle - Portfolio en français"
     },
+    "navbar1": {
+      "en": "About Us",
+      "fr": "Présentation"
+    },
+    "navbar2": {
+      "en": "Projects",
+      "fr": "Projets"
+    },
+    "navbar3": {
+      "en": "Contact Me",
+      "fr": "Contact Moi"
+    },
     "aboutMeHeader": {
       "en": "About Me",
       "fr": "Présentation"
