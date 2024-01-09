@@ -123,6 +123,14 @@ footer {
     margin-top: 12px;
 }
 
+.menu li:hover {
+    background-color: white;
+}
+
+.menu li a:hover {
+    color: #00539f;
+}
+
 .menu a {
     text-decoration: none;
     color: white; /* Couleur du texte du menu */
