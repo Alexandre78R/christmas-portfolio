@@ -55,7 +55,7 @@ section {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
+    /* margin: 20px 0; */
     padding: 20px;
 }
 
@@ -147,6 +147,70 @@ footer {
     height: 3px;
     background-color: white;
     margin: 6px 0;
+}
+
+/* Ajout de styles pour le mode sombre */
+.dark-mode body {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode section {
+    background-color: #333;
+    color: white;
+    border-radius: 0;
+    margin : 0;
+}
+
+.dark-mode header {
+    background-color: #222;
+}
+
+.dark-mode .project-info h3 {
+    color: white;
+}
+
+.dark-mode .project-info p {
+    color: white;
+}
+
+.dark-mode h2 {
+    color: white;
+}
+
+.dark-mode .menu-burger {
+    background-color: #222;
+}
+
+.dark-mode .menu {
+    background-color: #222;
+}
+
+.dark-mode footer {
+    background-color: #222;
+}
+
+/* Ajoutez ceci à votre fichier CSS pour styliser le bouton de changement de thème */
+.theme-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+}
+
+.dark-mode-on {
+    color: #f39c12; /* Couleur jaune pour le mode sombre */
+}
+
+.fa-sun-o {
+    color: orange;
+    font-size: 20px;
+}
+
+.fa-moon-o {
+    color: black;
+    font-size: 20px;
 }
 
 /* Media Queries pour la réactivité */

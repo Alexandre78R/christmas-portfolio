@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css">
     <script src="index.js" defer></script>
     <title id="pageTitle">English Theme Portfolio</title>
@@ -48,7 +49,7 @@
         </div>
     </section>
 
-    <div>
+    <div class="test">
         <div class="menu-burger" onclick="toggleMenu()">
             <div class="bar"></div>
             <div class="bar"></div>
@@ -56,6 +57,11 @@
         </div>
         <div class="menu">
             <ul>
+                <button class="theme-toggle" onclick="toggleDarkMode()">
+                    <i class="fa fa-sun-o"></i>
+                    <i class="fa fa-moon-o"></i>
+                </button>
+
                 <img src="english.jpg" onclick="changeLanguage()" alt="English Flag" class="english-flag" id="englishFlagMenu">
                 <img src="france.png" onclick="changeLanguage()" alt="French Flag" class="english-flag" id="frenchFlagMenu" style="display: none;">
                 <li><a class="translateable scroll-link" href="#about" id="navbar1">About Us</a></li>
