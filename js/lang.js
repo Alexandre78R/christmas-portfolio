@@ -2,7 +2,7 @@ let currentLanguage = 'en';
 // Fonction pour charger les traductions depuis le fichier JSON
 async function loadTranslations() {
     try {
-        const response = await fetch('./index.json');
+        const response = await fetch('../lang/lang.json');
         translations = await response.json();
         changeLanguage(); // Appliquer les traductions une fois chargées
     } catch (error) {
