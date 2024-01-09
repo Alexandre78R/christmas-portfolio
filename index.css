@@ -208,10 +208,20 @@ footer {
     font-size: 20px;
 }
 
-.fa-moon-o {
-    color: black;
+.fa-sun-o:hover {
+    color: rgb(255, 111, 0);
     font-size: 20px;
 }
+
+.fa-moon-o {
+    color: rgb(51, 50, 50);
+    font-size: 20px;
+}
+.fa-moon-o:hover {
+    color: rgb(9, 9, 9);
+    font-size: 20px;
+}
+
 
 /* Media Queries pour la réactivité */
 @media screen and (max-width: 768px) {
