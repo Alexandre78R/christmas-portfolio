@@ -188,6 +188,16 @@ footer {
     background-color: #222;
 }
 
+.dark-mode input {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode textarea {
+    background-color: #222;
+    color: white;
+}
+
 /* Ajoutez ceci à votre fichier CSS pour styliser le bouton de changement de thème */
 .theme-toggle {
     background-color: transparent;
@@ -218,6 +228,43 @@ footer {
 .fa-moon-o:hover {
     color: rgb(9, 9, 9);
     font-size: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    padding: 11px;
+    margin-bottom: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.button-form {
+    background-color: #00539f;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 50%;
+    text-align: center;
+    transition: background-color 0.3s;
+    margin: auto; /* Ajout de la marge auto pour centrer le bouton */
+
+}
+
+.button-form:hover {
+    background-color: #004080;
 }
 
 

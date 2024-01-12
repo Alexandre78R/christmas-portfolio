@@ -1,4 +1,6 @@
 let currentLanguage = 'en';
+let translations = {};
+
 // Fonction pour charger les traductions depuis le fichier JSON
 async function loadTranslations() {
     try {
@@ -9,6 +11,24 @@ async function loadTranslations() {
         console.error('Error fetching translations:', error);
     }
 }
+
+function submitForm () {
+    // // Récupérer les valeurs du formulaire
+    // const email = document.getElementById('email').value;
+    // const subject = document.getElementById('subject').value;
+    // const message = document.getElementById('message').value;
+    
+    // // Vous pouvez ajouter ici le code pour traiter le formulaire, par exemple, envoyer les données à un serveur
+    // // ...
+    // console.log("test")
+    // // Réinitialiser le formulaire après soumission
+    // document.getElementById('contactForm').reset();
+    // loadTranslations();
+    // console.log(translations[key])
+    alert("Message Envoyer !");
+
+} 
+
 
 function changeLanguage() {
     // Sélectionne tous les éléments qui nécessitent un changement de langue

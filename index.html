@@ -40,11 +40,24 @@
             <!-- Ajoutez plus de projets au besoin -->
         </div>
     </section>
-    
+
     <section class="contact" id="contact">
         <div class="container">
             <h2 class="translateable" lang="en" id="contactHeader">Contact Me</h2>
-            <p class="translateable" lang="en" id="contactText">Feel free to reach out to me for collaboration or just to chat about web development. You can contact me via email at [your@email.com] or find me on social media.</p>
+            <p class="translateable" lang="en" id="contactText">Feel free to reach out to me for collaboration or just to chat about web development. You can contact me via the form below or find me on social media.</p>
+    
+            <form id="contactForm">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+    
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button type="button" class="button-form" onclick="submitForm()">Submit</button>
+            </form>
         </div>
     </section>
 
@@ -81,5 +94,6 @@
     <script src="./js/lang.js"></script>
     <script src="./js/mode-dark.js"></script>
     <script src="./js/scrool.js"></script>
+    <script src="./js/message.js"></script>
 </body>
 </html>
