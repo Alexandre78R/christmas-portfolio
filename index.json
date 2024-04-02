@@ -7,6 +7,18 @@
         "en": "Asle - English Portfolio",
         "fr": "Asle - Portfolio en français"
     },
+    "navbar1": {
+      "en": "About Us",
+      "fr": "Présentation"
+    },
+    "navbar2": {
+      "en": "Projects",
+      "fr": "Projets"
+    },
+    "navbar3": {
+      "en": "Contact Me",
+      "fr": "Contact Moi"
+    },
     "aboutMeHeader": {
       "en": "About Me",
       "fr": "Présentation"
@@ -36,7 +48,7 @@
       "fr": "N'hésitez pas à me contacter pour collaborer ou simplement discuter du développement web. Vous pouvez me joindre par e-mail à [votre@email.com] ou me trouver sur les réseaux sociaux."
     },
     "footerText": {
-      "en": "© 2024 English Theme Portfolio | Created by Alexandre | Powered by ChatGPT",
-      "fr": "© 2024 Portfolio de thème anglais | Créé par Alexandre | Développer par ChatGPT"
+      "en": "© 2024 English Portfolio Asle | Created by Alexandre",
+      "fr": "© 2024 Portfolio en français d'Asle | Créé par Alexandre"
     }
   }

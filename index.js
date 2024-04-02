@@ -37,11 +37,11 @@ function changeLanguage() {
     currentLanguage = (currentLanguage === 'en') ? 'fr' : 'en';
 
     if (currentLanguage === 'en') {
-        englishFlag.style.display = 'inline-block';
-        frenchFlag.style.display = 'none';
+        englishFlagMenu.style.display = 'inline-block';
+        frenchFlagMenu.style.display = 'none';
     } else {
-        englishFlag.style.display = 'none';
-        frenchFlag.style.display = 'inline-block';
+        englishFlagMenu.style.display = 'none';
+        frenchFlagMenu.style.display = 'inline-block';
     }
 }
 
@@ -49,3 +49,47 @@ function changeLanguage() {
 document.addEventListener('DOMContentLoaded', function () {
     loadTranslations(); // Charger les traductions au chargement de la page
 });
+
+document.addEventListener('click', function (e) {
+    if (e.target.classList.contains('scroll-link')) {
+        e.preventDefault();
+
+        const targetId = e.target.getAttribute('href').substring(1); // Obtient l'ID de la cible (section)
+        const targetElement = document.getElementById(targetId);
+
+        // Vérifie si la cible existe
+        if (targetElement) {
+            // Utilisez smooth scroll pour une animation agréable
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+});
+
+var isMenuBurger = false; 
+
+function toggleMenu() {
+    const menu = document.querySelector('.menu');
+    isMenuBurger = !isMenuBurger;
+    if (isMenuBurger) 
+        menu.style.display = 'flex';
+    else 
+        menu.style.display = "none";
+}
+
+let isModeSombre = false;
+let moon = document.querySelector('.fa-moon-o');
+let sun = document.querySelector('.fa-sun-o');
+function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+    isModeSombre = !isModeSombre;
+    if (isModeSombre) {
+        sun.style.display = "block";
+        moon.style.display = "none";
+    } else {
+        sun.style.display = "none";
+        moon.style.display = "block";
+    }
+}
+
+sun.style.display = "none";
+moon.style.display = "block";

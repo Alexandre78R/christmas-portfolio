@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="index.css">
     <script src="index.js" defer></script>
     <title id="pageTitle">English Theme Portfolio</title>
 </head>
 <body>
 
-    <header>
+    <header id="about">
         <div class="container">
             <div class="avatar-and-flag">
                 <img src="asle.png" alt="Asle's Avatar" class="avatar">
-                <img src="english.jpg" onclick="changeLanguage()" alt="English Flag" class="english-flag" id="englishFlag">
-                <img src="france.png" onclick="changeLanguage()" alt="French Flag" class="english-flag" id="frenchFlag" style="display: none;">
             </div>
             <h1 class="translateable" lang="en" id="headerText">English Theme Portfolio</h1>
         </div>
     </header>
 
+    
     <section class="about-me">
         <div class="container">
             <h2 class="translateable" lang="en" id="aboutMeHeader">About Me</h2>
             <p class="translateable" lang="en" id="aboutMeText">Hi, I'm Asle, a web developer in training. I'm passionate about learning and exploring the world of web development. Join me on this exciting journey as I enhance my skills and create amazing digital experiences.</p>
         </div>
     </section>
-
-    <section class="projects">
+    
+    <section class="projects" id="projects">
         <div class="container">
             <h2 class="translateable" lang="en" id="project1">Projects</h2>
             <div class="project">
@@ -37,17 +37,40 @@
                     <p class="translateable" lang="en" id="project1Description">The Campus Drawing project involves creating a user-friendly and visually appealing drawing for a university campus. The goal is to provide students and visitors with easy access to information about campus facilities, events, and academic programs. The project aims to enhance the overall digital presence of the university.</p>
                 </div>
             </div>
-
+            
             <!-- Ajoutez plus de projets au besoin -->
         </div>
     </section>
-
-    <section class="contact">
+    
+    <section class="contact" id="contact">
         <div class="container">
             <h2 class="translateable" lang="en" id="contactHeader">Contact Me</h2>
             <p class="translateable" lang="en" id="contactText">Feel free to reach out to me for collaboration or just to chat about web development. You can contact me via email at [your@email.com] or find me on social media.</p>
         </div>
     </section>
+
+    <div class="test">
+        <div class="menu-burger" onclick="toggleMenu()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="menu">
+            <ul>
+                <button class="theme-toggle" onclick="toggleDarkMode()">
+                    <i class="fa fa-sun-o"></i>
+                    <i class="fa fa-moon-o"></i>
+                </button>
+
+                <img src="english.jpg" onclick="changeLanguage()" alt="English Flag" class="english-flag" id="englishFlagMenu">
+                <img src="france.png" onclick="changeLanguage()" alt="French Flag" class="english-flag" id="frenchFlagMenu" style="display: none;">
+                <li><a class="translateable scroll-link" href="#about" id="navbar1">About Us</a></li>
+                <li><a class="translateable scroll-link" href="#projects" id="navbar2">Projects</a></li>
+                <li><a class="translateable scroll-link" href="#contact"id="navbar3">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    
 
     <footer>
         <div class="container">

@@ -1,11 +1,19 @@
 /* Styles généraux */
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
+    background-color: #f8f8f8; /* Couleur de fond du corps */
+    transition: background-color 0.5s; /* Animation de transition pour une expérience en douceur */
+    margin : 0;
     padding: 0;
-    background-color: #f8f8f8;
-    color: #333;
 }
+
+header {
+    background-color: #00539f;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+    position: relative;
+}
+
 
 .container {
     max-width: 1200px;
@@ -18,14 +26,6 @@ body {
     float: left;
     margin-top: 10px;
     margin-right: 10px;
-}
-
-header {
-    background-color: #00539f;
-    color: white;
-    text-align: center;
-    padding: 2em 0;
-    position: relative;
 }
 
 .avatar {
@@ -55,7 +55,7 @@ section {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px 0;
+    /* margin: 20px 0; */
     padding: 20px;
 }
 
@@ -103,6 +103,126 @@ footer {
     padding: 10px 0;
 }
 
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #00539f; /* Couleur de fond du menu, même que la navbar */
+    padding: 10px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 12px;
+}
+
+.menu li:hover {
+    background-color: white;
+}
+
+.menu li a:hover {
+    color: #00539f;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white; /* Couleur du texte du menu */
+    font-weight: bold;
+}
+
+.menu-burger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+}
+
+/* Ajout de styles pour le mode sombre */
+.dark-mode body {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode section {
+    background-color: #333;
+    color: white;
+    border-radius: 0;
+    margin : 0;
+}
+
+.dark-mode header {
+    background-color: #222;
+}
+
+.dark-mode .project-info h3 {
+    color: white;
+}
+
+.dark-mode .project-info p {
+    color: white;
+}
+
+.dark-mode h2 {
+    color: white;
+}
+
+.dark-mode .menu-burger {
+    background-color: #222;
+}
+
+.dark-mode .menu {
+    background-color: #222;
+}
+
+.dark-mode footer {
+    background-color: #222;
+}
+
+/* Ajoutez ceci à votre fichier CSS pour styliser le bouton de changement de thème */
+.theme-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+}
+
+.dark-mode-on {
+    color: #f39c12; /* Couleur jaune pour le mode sombre */
+}
+
+.fa-sun-o {
+    color: orange;
+    font-size: 20px;
+}
+
+.fa-sun-o:hover {
+    color: rgb(255, 111, 0);
+    font-size: 20px;
+}
+
+.fa-moon-o {
+    color: rgb(51, 50, 50);
+    font-size: 20px;
+}
+.fa-moon-o:hover {
+    color: rgb(9, 9, 9);
+    font-size: 20px;
+}
+
+
 /* Media Queries pour la réactivité */
 @media screen and (max-width: 768px) {
     header {
@@ -137,5 +257,31 @@ footer {
 
     .project-image {
         transform: rotate(-90deg);
+    }
+
+    .menu {
+        display: none;
+        top: 44px;
+    }
+
+    .menu-active {
+        display : flex;
+    }
+
+    .menu-burger {
+        display: block;
+        position: fixed;
+        top: 8px;
+        right: 0px;
+        z-index: 999;
+        background-color: #00539f;
+        padding: 2%;
+    }
+
+    .menu-burger:hover {
+        opacity: 0.8;
+    }
+    .test {
+        background-color: red;
     }
 }
